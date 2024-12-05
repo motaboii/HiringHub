@@ -4,12 +4,11 @@ import { Outlet } from 'react-router-dom'
 
 const AppLayout = () => {
     return (
-        <div>
+        <div className="relative min-h-screen">
             <div className='grid-background'></div>
-            <main className='min-h-screen container'>
+            <main className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <Header/>
-
-            <Outlet />
+                <Outlet />
             </main>
             <div className='p-4 text-center bg-gray-800 mt-10'>Made by Pranjal Prasoon</div>
         </div>
